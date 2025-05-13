@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Персонажи Магической Битвы</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 800px;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      background-color: #222;
+    }
+    .card img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .card:hover,
+    .card:active {
+      transform: scale(1.1);
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Персонажи Магической Битвы</h1>
+  <div class="gallery">
+    <div class="card">
+        <p style="text-align: center;"> Itadori Yudji</p><img src="https://lh6.googleusercontent.com/proxy/W-YByoa7TIruK4spcTgfH771PTL5itoWxiLozMtZpgPuiOwMZiSeWgZDL7_COqnB0WteyblexxIRCXXGkqfFeMPGOOuJvX94KQg" alt="Итадори Юдзи"></div>
+    <div class="card"> <p style="text-align: center;">Fusiguro Megumi</p> <img src="https://lh6.googleusercontent.com/proxy/AKRYWpkHBlYf0OFuwRNgGkgjJWh5YzfdOyxnHiaZQBe1jNZuo34oXCpwWV9EUxUS0XE7jRb-p64ZeN9RsI9I0Bfx811yeYD64Zg" alt="Фушигуро Мэгуми"></div>
+    <div class="card"> <p style="text-align: center;">Kugisaki Nobara</p><img src="https://lh4.googleusercontent.com/proxy/AnFw8ShdFzbfnVysf4JrYr8xaqcKM0i4jxCGt-4DfjfREXo3gacE5PByppdaR_nPzdXjgGxhtcnu5XMpAYHv-yjMBSgBgXsVmEE" alt="Кугисаки Нобара"></div>
+    <div class="card"> <p style="text-align: center;"> Gojo Satoru</p> <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-t5qi-p-kartinki-godzho-na-prozrachnom-fone-4.png" alt="Годжо Сатору"></div>
+    <div class="card"> <p style="text-align: center;" > Gheto Suguru</p><img src="https://i.pinimg.com/736x/e3/1d/23/e31d2386ecdd4c693dabf4b5d2501ecb.jpg" alt="Гето Сугуру"></div>
+    <div class="card"> <p style="text-align: center;">Kento Nanamin</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHySxLfL_jYdc4S9ioh33LZ22NfWonIMlFA&s" alt="Кенто Нанами"></div>
+    <div class="card"> <p style="text-align: center;">Inumaki Toge</p><img src="hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNb_GBsD_nwaIn0fz7dSkwxHq7UZ7hNfj7g&s" alt="Инумаки Тоге"></div>
+  </div>
+</body>
+</html>
